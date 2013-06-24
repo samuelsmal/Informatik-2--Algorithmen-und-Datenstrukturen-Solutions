@@ -1,0 +1,100 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fullpage}
+\newcommand{\BigO}[1]{\ensuremath{\operatorname{O}\bigl(#1\bigr)}}
+\author{Samuel von Baussnern}
+\title{Solutions to exercise No. 6}
+\begin{document}
+
+\maketitle
+\section{Task B: Minimum Spanning Tree}
+\subsection{Jarnik, Prim and Dijkstra algorithm}
+
+The algorithm starts with a single vertex of the graph. Then loops through all the edges of already marked vertexes and adds the edge, which satisfies two rules: 
+\begin{enumerate}
+\item It has the minimum weight, and 
+\item wouldn't connect to an already added vertex. 
+\end{enumerate}
+This step is repeated until every vertex is added or no more edges satisfy the second rule.
+
+\subsection{Practical example}
+
+I number the vertexes of the graph clockwise (12 o'clock, 2 o'clock, 4 o'clock, etc.), for saving space I'll omit the 'o'clock'-term in the future.
+
+The list of the added edges in chronological order starting the vertex 12:
+\begin{enumerate}
+\item (12, 2)
+\item (2, 8)
+\item (2, 6)
+\item (12, 10)
+\item (10, 4)
+\end{enumerate}
+
+Results in this adjacent matrix:
+$
+\left(
+\begin{array}{cccccc}
+0 & 1 & 0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 1 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 \\
+0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 & 0
+\end{array}
+\right)
+$
+
+The weight of the MST: 19. The weight of the graph: 51.
+
+\subsection{Time complexity}
+The time complexitiy depends heavily on the loop through the edges of the vertexes. Therefore it's crucial to use an appropriate data structure:
+
+\begin{table}
+\begin{tabular}{l|c|c}
+Data structre used & Time complexity & Reason \\
+\hline \hline
+Adjacency matrix & $\BigO{|V|^{2}$ & Lookup is of constant time \\
+\hline
+Binary heap and adjacency list & \parbox[t]{5cm}{$\BigO{(|V| + |E|) \log{|V|})}$ \\ $= \BigO{|E| \log{|V|})}$} & Finding and deleting costs $\BigO{\log{n}}$ \\
+\hline
+Fibonacci heap and adjacency list & $\BigO{|E| + |V| \log{|V|})}$ & \parbox[t]{5cm}{Finding is of constant cost \\ and deleting the min has a amortized cost of $\BigO{\log{n}}$}
+\end{tabular}
+\end{table}
+
+The algorithm is used in computer network design, in implementing efficient circuit design, clustering gen expressions, handwriting recognition of mathematical equations and of course as a pedagogical instrument to graphs and greedy algorithms, just to name a few.
+
+\section{Task C: Kruskal}
+\subsection{Use of Kruskal's algorithm}
+Since the weights are pair-wise disjoint there exists only one MST.
+
+Listing the chosen edges:
+\begin{enumerate}
+\item (a,f)
+\item (c,d)
+\item (c,e)
+\item (f,d)
+\item (b,c)
+\end{enumerate}
+
+\subsection{Another example}
+
+Six different MSTs: \\ \hfill
+Listing the chosen edges:
+\begin{enumerate}
+\item (a,b)
+\item (a,c)
+\item Choice between: \begin{enumerate}
+\item (a,d)
+\item (c,d)
+\end{enumerate}
+\item Choice between: \begin{enumerate}
+\item (e,d)
+\item (e,b)
+\end{enumerate}
+\end{enumerate}
+
+\end{document}}

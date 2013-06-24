@@ -1,0 +1,124 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = ACBFBD5316CD26B00087E3C5 /* TaskE */;
+		activeTarget = 8DD76F620486A84900D96B5E /* TaskE */;
+		addToTargets = (
+			8DD76F620486A84900D96B5E /* TaskE */,
+		);
+		codeSenseManager = ACBFBD5816CD26C00087E3C5 /* Code sense */;
+		executables = (
+			ACBFBD5316CD26B00087E3C5 /* TaskE */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 382543536;
+			PBXWorkspaceStateSaveDate = 382543536;
+		};
+		perUserProjectItems = {
+			ACBFBD7116CD27920087E3C5 /* XCBuildMessageTextBookmark */ = ACBFBD7116CD27920087E3C5 /* XCBuildMessageTextBookmark */;
+			ACBFBD7F16CD27950087E3C5 /* PBXTextBookmark */ = ACBFBD7F16CD27950087E3C5 /* PBXTextBookmark */;
+		};
+		sourceControlManager = ACBFBD5716CD26C00087E3C5 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8DD76F620486A84900D96B5E /* TaskE */ = {
+		activeExec = 0;
+		executables = (
+			ACBFBD5316CD26B00087E3C5 /* TaskE */,
+		);
+	};
+	ACBFBD5316CD26B00087E3C5 /* TaskE */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = TaskE;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	ACBFBD5716CD26C00087E3C5 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	ACBFBD5816CD26C00087E3C5 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	ACBFBD5B16CD26E20087E3C5 /* Inheritance.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {523, 663}}";
+			sepNavSelRange = "{55, 0}";
+			sepNavVisRange = "{0, 479}";
+		};
+	};
+	ACBFBD7116CD27920087E3C5 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "AmphibicVehicle.h: No such file or directory";
+		fRef = ACBFBD5B16CD26E20087E3C5 /* Inheritance.cpp */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 3;
+		rType = 1;
+	};
+	ACBFBD7F16CD27950087E3C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ACBFBD5B16CD26E20087E3C5 /* Inheritance.cpp */;
+		name = "Inheritance.cpp: 4";
+		rLen = 0;
+		rLoc = 55;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+}
